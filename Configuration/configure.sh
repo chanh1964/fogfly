@@ -120,12 +120,9 @@ if [ "${OS}" = "Linux" ] ; then
 		echo "${C}[Master Node Network]${NC}"
 		read -p "What is your network address ?: " netaddr
 		link_area="https://fogfly.000webhostapp.com/process/area.php?role=m&areacode=$area&gw=$netaddr"
-		echo ${link_area}
 		package_key=$(curl -X GET ${link_area})
 		keyauth=$(echo ${package_key} | cut -d' ' -f 2)
-		echo ${keyauth}
 		link_m="https://fogfly.000webhostapp.com/process/package.php?role=m&key=$keyauth"
-		echo ${link_m}
 		package_m=$(curl -X GET ${link_m})
 		curl -O ${package_m}
 		echo "${C}[CONFIGURATION DONE]${NC}"
