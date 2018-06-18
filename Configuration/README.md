@@ -1,5 +1,5 @@
 # FOGFLY DEPLOYMENT 
-## INSTRUCTION MANUEL
+## INSTRUCTION MANUAL
 ### Version 1.0
 
 1. Download the **Configuration Package** for **Fog Node Configuration**
@@ -15,6 +15,7 @@
 
 5. If your choice is **Master Node**  
 	> "What is your area number ?: "
+
 	> "What is your network address ?: "
 
 6. If your choice is **Slave Node**  
@@ -24,6 +25,7 @@
 
 8. Start the **Fog Node**
 	> npm install
+	
 	> npm start
 
 ### Dragonfly Team 2018
