@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Starting server"
+sudo service mongod restart
+sudo mongod --dbpath /home/dragonfly/FogNode/slave/data99 --port 20099 & cd /home/dragonfly/FogNode/slave
+npm run dev 7099 99Node 20099 localhost 192.168.0.105
+
+#when run must change cd and other slave nodes adddress appropriately
+#final argument is other slave nodes address

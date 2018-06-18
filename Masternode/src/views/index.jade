@@ -1,0 +1,52 @@
+extends layout
+
+// input: db
+
+block content
+  h1 Report on Traffic state. Information collected at !{db.timeStamp.time}
+  //- p Welcome to !{title}
+  table
+    tr 
+      th From Node Id
+      th To Node Id (Controlling node)
+      th Number Of Vehicles
+      th Average Velocity
+    tr
+      td(rowspan=4) !{db.db[0].fromNodeId}
+      td !{db.db[0].directionList[0].toNodeId}
+      td !{db.db[0].directionList[0].vehNum}
+      td !{db.db[0].directionList[0].avgVel}
+    tr
+      td !{db.db[0].directionList[1].toNodeId}
+      td !{db.db[0].directionList[1].vehNum}
+      td !{db.db[0].directionList[1].avgVel}    
+    tr
+      td !{db.db[0].directionList[2].toNodeId}
+      td !{db.db[0].directionList[2].vehNum}
+      td !{db.db[0].directionList[2].avgVel}
+    tr
+      td !{db.db[0].directionList[3].toNodeId}
+      td !{db.db[0].directionList[3].vehNum}
+      td !{db.db[0].directionList[3].avgVel}   
+    tr
+      td !{db.db[1].fromNodeId}
+      td !{db.db[1].directionList[0].toNodeId}
+      td !{db.db[1].directionList[0].vehNum}
+      td !{db.db[1].directionList[0].avgVel}   
+    tr
+      td !{db.db[2].fromNodeId}
+      td !{db.db[2].directionList[0].toNodeId}
+      td !{db.db[2].directionList[0].vehNum}
+      td !{db.db[2].directionList[0].avgVel}
+    tr
+      td !{db.db[3].fromNodeId}
+      td !{db.db[3].directionList[0].toNodeId}
+      td !{db.db[3].directionList[0].vehNum}
+      td !{db.db[3].directionList[0].avgVel}  
+    tr
+      td !{db.db[4].fromNodeId}
+      td !{db.db[4].directionList[0].toNodeId}
+      td !{db.db[4].directionList[0].vehNum}
+      td !{db.db[4].directionList[0].avgVel}
+
+    
