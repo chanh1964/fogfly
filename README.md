@@ -15,8 +15,8 @@ Fog Computing In Intelligent Transportation System.
             - Create *empty* directory `data[99..103]` 
         1. Port collision:
             
-                `$ lsof -i:[port] //to find pid of process that is using the port`
-                `$ kill -9 [pid]`
+                $ lsof -i:[port] //to find pid of process that is using the port
+                $ kill -9 [pid]
             
             and run the script again
 1. Configuration
