@@ -25,4 +25,4 @@ For more information, please visit [our website](https://fogfly.000webhostapp.co
     *Please see the Readme.md inside `configuration` for instructions*
 
 ### Dragonfly Team 2018
-#### Need Help? Please contact the developer team through email: *fogfly@dragonfly.com*
+#### Need Help? Please contact the developer team through email: *binhbkit.cse@gmail.com*
